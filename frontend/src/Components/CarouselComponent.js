@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const CarouselComponent = ({ products }) => {
+const CarouselComponent = ({ cars }) => {
   return (
     <div className="carousel-container">
     <Carousel className='img'
@@ -13,9 +13,9 @@ const CarouselComponent = ({ products }) => {
     showStatus={false} 
     showIndicators={true} 
     showArrows={true} >
-      {products.map((product) => (
-        <div className="product" key={product.slug}>
-          <img src={product.image} alt={product.name} />
+      {cars.map((car) => (
+        <div className="product" key={car.slug}>
+          <img src={car.image} alt={car.name} />
         </div>
       ))}
     </Carousel>

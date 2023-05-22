@@ -10,7 +10,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/product/:slug" element={<CarViewScreen />} />
+          <Route path="/car/:slug" element={<CarViewScreen />} />
           <Route path="/" element={<HomeScreen />} />
         </Routes>
       </main>

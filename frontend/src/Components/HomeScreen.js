@@ -8,21 +8,21 @@ function HomeScreen() {
     <div>
     
       <div>
-        <CarouselComponent products={data.products} />
+        <CarouselComponent cars={data.cars} />
       </div>
       <h1>Hyundai</h1>
-      <div className="products">
-        {data.products.map((product) => (
-          <div className="product" key={product.slug}>
-            <Link to={`/product/${product.slug}`}>
-              <img src={product.image} alt={product.name} />
+      <div className="cars">
+        {data.cars.map((cars) => (
+          <div className="car" key={cars.slug}>
+            <Link to={`/car/${cars.slug}`}>
+              <img src={cars.image} alt={cars.name} />
             </Link>
-            <div className="product-info">
-              <Link to={`/product/${product.slug}`}>
-                <p>{product.name}</p>
+            <div className="car-info">
+              <Link to={`/car/${cars.slug}`}>
+                <p>{cars.name}</p>
               </Link>
               <p>
-                <strong>{product.price} Lakhs onwards</strong>
+                <strong>{cars.price} Lakhs onwards</strong>
               </p>
               <button>Book Test Drive</button>
             </div>

@@ -34,23 +34,24 @@ footer {
   padding: 0.5rem;
 }
 
-.products {
+.cars {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.product {
+.car {
   border: 1px #404040 solid;
   margin: 1rem;
+  
 }
 
-.product img {
+.car img {
   width: 100%;
   max-width: 400px;
 }
 
-.product-info {
+.car-info {
   padding: 1rem;
 }
 
