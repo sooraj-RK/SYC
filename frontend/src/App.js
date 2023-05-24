@@ -14,8 +14,8 @@ function App() {
           <Route path="/" element={<HomeScreen />} />
         </Routes>
       </main>
-      <footer>
-          <div className="text-center">All rights reserved SYC</div>
+      <footer >
+          <div className="text-center footerstyl">All rights reserved SYC</div>
         </footer>
     </div>
   </BrowserRouter>
